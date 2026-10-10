@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webhook-delivery-engine"
+version = "1.0.0"
+description = "Reliable webhook delivery engine with HMAC signing, retry queue and exponential backoff"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Afzalbek", email = "afzalbek-dev@users.noreply.github.com"}]
+
+[project.scripts]
+webhook-delivery = "webhook_delivery.cli:main"
